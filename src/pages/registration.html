@@ -1,0 +1,170 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="../../dist/output.css"
+        rel="stylesheet">
+</head>
+
+<body class="bg-[#F2F2F2] font-sans">
+    <header class="bg-primary fixed z-10 w-full ">
+        <nav class="max-w-[1440px] mx-auto  py-4 px-[50px] lg:px-[100px]">
+            <div class="flex justify-between">
+                <a href="../../index.html">
+                    <img src="../../src/img/LOGO DBPC2023.png"
+                        alt="">
+                </a>
+                <div class="hidden md:flex items-center text-white gap-7">
+                    <div class=" text-base  font-semibold"><a href="../../#about">About</a> </div>
+                    <div class="text-base font-semibold"><a href="../../#mekanisme">Mechanism</a> </div>
+                    <div class="text-base font-semibold"><a href="../../#aggregator">Latest Update</a> </div>
+                    <a href="./registration.html">
+                        <button
+                            class="text-primary text-base font-semibold bg-white py-[10px] px-[30px] rounded-full">Register</button>
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-white "
+                            x-show="!showMenu"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="hidden mobile-menu ">
+                <div class="flex  flex-col items-center text-white gap-7 p-5 z-5">
+                    <div class=" text-base  font-semibold"><a href="./#about">About</a> </div>
+                    <div class="text-base font-semibold"><a href="./#mekanisme">Mechanism</a> </div>
+                    <div class="text-base font-semibold"><a href="./#aggregator">Latest Update</a> </div>
+                    <a href="./src/pages/registration.html">
+                        <button
+                            class="text-primary text-base font-semibold bg-white py-[10px] px-[30px] rounded-full">Register</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <div class="w-full h-[400px] bg-cover  bg-no-repeat"
+            style="background-image: url(../img/registration-background.png);">
+        </div>
+        <!-- <img src="../img/registration-background.png"
+            class="w-full h-[400px]"
+            alt=""> -->
+        <div class="max-w-[1440px] mx-auto relative  px-8 bottom-52">
+            <p class="text-center pb-[30px] text-5xl text-white font-bold">Registrasi</p>
+            <div class="mx-auto bg-white py-[30px] px-5 rounded-2xl w-auto md:w-[600px]">
+                <form action=""
+                    class="flex flex-col gap-5 ">
+                    <input type="text"
+                        placeholder="Nama Perusahaan*"
+                        class="text-xs bg-input w-full py-4 ps-[15px] rounded-lg placeholder:text-dark placeholder:text-xs ">
+                    <input type="email"
+                        placeholder="Email*"
+                        class="text-xs bg-input w-full py-4 ps-[15px] rounded-lg placeholder:text-dark placeholder:text-xs ">
+                    <div class="flex flex-col ">
+                        <input type="number"
+                            placeholder="Nomor Telepon*"
+                            class=" text-xs bg-input w-full py-4 ps-[15px] rounded-lg placeholder:text-dark placeholder:text-xs ">
+                        <small class="text-[10px] text-gray-500 pt-2">Isi hanya angka</small>
+                    </div>
+                    <textarea name=""
+                        id=""
+                        cols="30"
+                        rows="5"
+                        class="text-xs bg-input w-full py-4 ps-[15px] rounded-lg placeholder:text-dark placeholder:text-xs "
+                        placeholder="Tentang Perusahaan (Max. 200 character)*"></textarea>
+                    <div class="flex items-center gap-5">
+                        <label for="inputLogo"
+                            class="cursor-pointer shrink-0  "><img src="../img/input-logo-registration.png"
+                                class="w-[150px] h-[150px] md:w-[200px] md:h-[200px]"
+                                alt=""></label>
+                        <input type="file"
+                            name=""
+                            id="inputLogo"
+                            class="hidden">
+                        <ol class="list-decimal pl-5 text-dark text-[10px] leading-5  font-medium md:text-xs">
+                            <li>Format file: .png, .jpg, .jpeg</li>
+                            <li>Maksimal ukuran file 200KB</li>
+                            <li>Hindari penggunaan logo berwarna putih</li>
+                            <li> Minimal lebar 300px</li>
+                        </ol>
+                    </div>
+                    <div class="flex flex-col ">
+                        <label for="profilFile"
+                            class="cursor-pointer text-xs bg-input w-full ps-[15px] rounded-lg  flex  items-center justify-between">
+                            Profil Perusahaan atau Deck (opsional) <div
+                                class="bg-primary px-6 md:px-[51px] py-4 rounded-lg text-xs font-bold text-white">Upload
+                                File </div></label>
+                        <input type="file"
+                            class="hidden"
+                            id="profilFile">
+                        <small class="text-[10px] text-gray-500 pt-2">Format file .pdf , maksimal size 20mb</small>
+                    </div>
+                    <div class="flex flex-col ">
+                        <input type="text"
+                            placeholder="Link Website*"
+                            class=" text-xs bg-input w-full py-4 ps-[15px] rounded-lg placeholder:text-dark placeholder:text-xs ">
+                        <small class="text-[10px] text-gray-500 pt-2">Website, Sosial Media, dll. Sertakan protokol URL
+                            (https:// atau http://).</small>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox"
+                            name=""
+                            id="">
+                        <label for=""
+                            class="text-xs text-dark">Dengan menekan tombol "Daftar", Saya menyetujui syarat dan
+                            ketentuan yang berlaku</label>
+                    </div>
+                    <input type="submit"
+                        class="w-[210px] bg-primary  py-4 rounded-lg text-xs font-bold text-white mx-auto"
+                        value="Register">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-primary ">
+        <div class=" max-w-[1440px] mx-auto py-[30px] px-12 ">
+            <img src="../../src/img/LOGO DBPC2023.png"
+                alt=""
+                class="pb-[30px]">
+            <div class="flex flex-col justify-between gap-5 mb-5 lg:flex-row">
+                <p class="w-auto text-sm text-white font-semibold lg:w-[750px]">Detikfinance memberikan ruang kepada
+                    para startup di Indonesia untuk menunjukkan, serta mempromosikan brand mereka untuk mendapatkan
+                    perhatian dari venture capital atau angel investor</p>
+                <div class="flex gap-7">
+                    <a href=""> <img src="../../src/img/twitter-footer-icon.svg"
+                            alt=""></a>
+                    <a href=""> <img src="../../src/img/instagram-footer-icon.svg"
+                            alt=""></a>
+                    <a href=""><img src="../../src/img/facebook-footer-icon.svg"
+                            alt=""></a>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <p class="text-[10px] mt-5 text-white font-light">&copy; 2023 Detikcom.All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
