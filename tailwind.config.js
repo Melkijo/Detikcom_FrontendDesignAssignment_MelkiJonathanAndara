@@ -12,11 +12,6 @@ module.exports = {
                 "second": "#3EB7DD",
                 "dark": "#1B1E28"
             },
-            backgroundImage: {
-                'hero': "url('./img/BackgroundHeroSection.png')",
-                "mekanisme": "url('./src/img/Mekanisme.png')"
-
-            }
         },
     },
     plugins: [],
