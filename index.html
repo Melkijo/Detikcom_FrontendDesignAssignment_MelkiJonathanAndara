@@ -5,6 +5,7 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
     <title>Detikcom-Frontend Design Assignment</title>
+    <!-- google font -->
     <link rel="preconnect"
         href="https://fonts.googleapis.com">
     <link rel="preconnect"
@@ -12,6 +13,7 @@
         crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <!-- css style  -->
     <link href="./dist/output.css"
         rel="stylesheet">
 </head>
@@ -64,7 +66,7 @@
             </nav>
         </header>
         <div
-            class="max-w-[1440px] mx-auto py-[400px] text-start text-white w-auto px-16 lg:px-0 lg:w-[924px] sm:text-center">
+            class="max-w-[1440px] mx-auto py-[200px] text-start text-white w-auto px-16 lg:px-0 lg:w-[924px] sm:text-center sm:py-[400px]">
             <p class="text-2xl font-semibold "> Detikfinance Business Plan Competition 2023</p>
             <p class="text-[2.25rem] font-extrabold sm:text-[3rem]"> EMPOWERING INDONESIA STARTUP </p>
             <p class="text-base font-semibold">Detikfinance memberikan ruang kepada para startup di Indonesia untuk
@@ -78,16 +80,9 @@
     <div id="about"
         class="bg-white">
         <div
-            class="max-w-[1440px] mx-auto py-24 flex flex-col gap-9 px-5 justify-center items-center lg:py-52 lg:flex-row">
+            class="max-w-[1440px] mx-auto py-24 flex flex-col gap-9 px-5 justify-center items-center lg:py-[100px] lg:flex-row">
             <img src="./src/img/about.png"
                 alt="">
-            <!-- <iframe width="560"
-                height="315"
-                src="https://www.youtube.com/embed/zZNEvBvOHII?start=29"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe> -->
             <div>
                 <p class="text-primary text-xl font-bold">About Detikfinance Business Plan Competition 2023</p>
                 <p class="w-auto py-5 text-sm font-medium text-dark lg:w-[600px]">Detikfinance kali ini akan memberikan
@@ -214,7 +209,7 @@
                             alt="">
                     </div>
                 </div>
-                <div class="inline-flex justify-start items-center gap-5 my-[3rem] animate-[slide_7s_linear_infinite]">
+                <div class="inline-flex justify-start items-center gap-5 my-[3rem]  animate-[slide_7s_linear_infinite]">
                     <div class="shrink-0 bg-white  rounded-[10px] w-[291px] h-[144px] flex justify-center items-center">
                         <img src="./src/img/venture-running-logo.png"
                             alt="">
@@ -259,41 +254,59 @@
         <div class=" max-w-[1440px] mx-auto flex flex-col justify-center  py-14 px-[58px] lg:px-40 sm:px-7">
             <p class="text-[2rem] font-bold text-primary mb-10 text-center lg:text-left">LATEST UPDATE</p>
             <div class="grid grid-cols-1 mx-auto gap-[34px]  lg:grid-cols-3 sm:grid-cols-2 ">
-                <div class="w-auto lg:w-[348px] flex justify-center flex-col"><img src="./src/img/img1-aggregator.png"
-                        alt="">
-                    <p class="text-sm font-bold text-dark mb-2.5 mt-[15px]">Alpha JWC Ventures Suntikkan Dana Segar
-                        kepada OnlinePajak dan Stoqo</p>
-                    <small class="text-[13px] ">1 hari yang lalu</small>
+                <div
+                    class="w-auto lg:w-[348px] flex justify-center text-dark flex-col cursor-pointer overflow-hidden rounded-lg hover:text-primary">
+                    <img src="./src/img/img1-aggregator.png"
+                        alt=""
+                        class="scale-100 hover:scale-110 ">
+                    <p class="text-sm font-bold  mb-2.5 mt-[15px]">Alpha JWC Ventures Suntikkan Dana Segar kepada
+                        OnlinePajak dan Stoqo</p>
+                    <small class="text-[13px] text-dark ">1 hari yang lalu</small>
                 </div>
-                <div class="w-auto lg:w-[348px]  flex justify-center flex-col"><img src="./src/img/img2-aggregator.png"
-                        alt="">
-                    <p class="text-sm font-bold text-dark mb-2.5 mt-[15px]">Startup Lifepack Rampungkan Pendanaan Seri A
-                        yang Dipimpin Golden Gate Ventures </p>
-                    <small class="text-[13px]   flex justify-center flex-col">1 hari yang lalu</small>
+                <div
+                    class="w-auto lg:w-[348px] flex justify-center text-dark flex-col cursor-pointer overflow-hidden rounded-lg hover:text-primary">
+                    <img src="./src/img/img2-aggregator.png"
+                        alt=""
+                        class="scale-100 hover:scale-110 ">
+                    <p class="text-sm font-bold  mb-2.5 mt-[15px]">Startup Lifepack Rampungkan Pendanaan Seri A yang
+                        Dipimpin Golden Gate Ventures </p>
+                    <small class="text-[13px] text-dark ">1 hari yang lalu</small>
                 </div>
-                <div class="w-auto lg:w-[348px]  flex justify-center flex-col"><img src="./src/img/img3-aggregator.png"
-                        alt="">
-                    <p class="text-sm font-bold text-dark mb-2.5 mt-[15px]">Angel Investor Adalah? Berikut Jenis, Contoh
-                        dan Cara Mendapatkannya</p>
-                    <small class="text-[13px] ">1 hari yang lalu</small>
+                <div
+                    class="w-auto lg:w-[348px] flex justify-center text-dark flex-col cursor-pointer overflow-hidden rounded-lg hover:text-primary">
+                    <img src="./src/img/img3-aggregator.png"
+                        alt=""
+                        class="scale-100 hover:scale-110 ">
+                    <p class="text-sm font-bold  mb-2.5 mt-[15px]">Angel Investor Adalah? Berikut Jenis, Contoh dan Cara
+                        Mendapatkannya</p>
+                    <small class="text-[13px] text-dark ">1 hari yang lalu</small>
                 </div>
-                <div class="w-auto lg:w-[348px]  flex justify-center flex-col"><img src="./src/img/img4-aggregator.png"
-                        alt="">
-                    <p class="text-sm font-bold text-dark mb-2.5 mt-[15px]">Crowe Indonesia Gelar Diskusi terkait
-                        Valuasi Startup & Laporan ESG</p>
-                    <small class="text-[13px] ">1 hari yang lalu</small>
+                <div
+                    class="w-auto lg:w-[348px] flex justify-center text-dark flex-col cursor-pointer overflow-hidden rounded-lg hover:text-primary">
+                    <img src="./src/img/img4-aggregator.png"
+                        alt=""
+                        class="scale-100 hover:scale-110 ">
+                    <p class="text-sm font-bold  mb-2.5 mt-[15px]">Crowe Indonesia Gelar Diskusi terkait Valuasi Startup
+                        & Laporan ESG</p>
+                    <small class="text-[13px] text-dark ">1 hari yang lalu</small>
                 </div>
-                <div class="w-auto lg:w-[348px]  flex justify-center flex-col"><img src="./src/img/img5-aggregator.png"
-                        alt="">
-                    <p class="text-sm font-bold text-dark mb-2.5 mt-[15px]">Startup Fresh Factory Bangun Ratusan Gudang
-                        Dingin di 103 Kota</p>
-                    <small class="text-[13px] ">1 hari yang lalu</small>
+                <div
+                    class="w-auto lg:w-[348px] flex justify-center text-dark flex-col cursor-pointer overflow-hidden rounded-lg hover:text-primary">
+                    <img src="./src/img/img5-aggregator.png"
+                        alt=""
+                        class="scale-100 hover:scale-110 ">
+                    <p class="text-sm font-bold  mb-2.5 mt-[15px]">Startup Fresh Factory Bangun Ratusan Gudang Dingin di
+                        103 Kota</p>
+                    <small class="text-[13px] text-dark ">1 hari yang lalu</small>
                 </div>
-                <div class="w-auto lg:w-[348px]  flex justify-center flex-col"><img src="./src/img/img6-aggregator.png"
-                        alt="">
-                    <p class="text-sm font-bold text-dark mb-2.5 mt-[15px]">Startup Pertanian RI Dapat Pendanaan Awal,
-                        Totalnya Rp 90 M</p>
-                    <small class="text-[13px] ">1 hari yang lalu</small>
+                <div
+                    class="w-auto lg:w-[348px] flex justify-center text-dark flex-col cursor-pointer overflow-hidden rounded-lg hover:text-primary">
+                    <img src="./src/img/img6-aggregator.png"
+                        alt=""
+                        class="scale-100 hover:scale-110 ">
+                    <p class="text-sm font-bold  mb-2.5 mt-[15px]">Startup Pertanian RI Dapat Pendanaan Awal, Totalnya
+                        Rp 90 M</p>
+                    <small class="text-[13px] text-dark ">1 hari yang lalu</small>
                 </div>
             </div>
         </div>

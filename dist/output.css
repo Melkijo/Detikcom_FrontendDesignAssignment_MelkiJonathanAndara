@@ -652,6 +652,18 @@ video {
   width: 100%;
 }
 
+.w-\[348px\] {
+  width: 348px;
+}
+
+.w-36 {
+  width: 9rem;
+}
+
+.w-\[328px\] {
+  width: 328px;
+}
+
 .max-w-\[1440px\] {
   max-width: 1440px;
 }
@@ -662,6 +674,18 @@ video {
 
 .shrink-0 {
   flex-shrink: 0;
+}
+
+.scale-110 {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-100 {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @keyframes slide {
@@ -909,6 +933,11 @@ video {
   padding-bottom: 400px;
 }
 
+.py-\[200px\] {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .pb-\[30px\] {
   padding-bottom: 30px;
 }
@@ -1066,6 +1095,59 @@ video {
   color: rgb(27 30 40 / var(--tw-text-opacity));
 }
 
+.hover\:w-\[390px\]:hover {
+  width: 390px;
+}
+
+.hover\:w-52:hover {
+  width: 13rem;
+}
+
+.hover\:w-\[360px\]:hover {
+  width: 360px;
+}
+
+.hover\:w-\[328px\]:hover {
+  width: 328px;
+}
+
+.hover\:w-\[348px\]:hover {
+  width: 348px;
+}
+
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:bg-\[110\%\]:hover {
+  background-position: 110%;
+}
+
+.hover\:text-primary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 124 189 / var(--tw-text-opacity));
+}
+
+.hover\:text-inherit:hover {
+  color: inherit;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+   100% {
+    transform: translateX(-100%);
+  }
+}
+
+.focus-visible\:animate-\[slide_7s_linear_infinite\]:focus-visible {
+  animation: slide 7s linear infinite;
+}
+
 @media (min-width: 640px) {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1074,6 +1156,11 @@ video {
   .sm\:px-7 {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+  }
+
+  .sm\:py-\[400px\] {
+    padding-top: 400px;
+    padding-bottom: 400px;
   }
 
   .sm\:text-center {
@@ -1173,6 +1260,11 @@ video {
   .lg\:py-52 {
     padding-top: 13rem;
     padding-bottom: 13rem;
+  }
+
+  .lg\:py-\[100px\] {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .lg\:text-left {
